@@ -40,6 +40,12 @@
 npm install terminal-translate -g
 ```
 
+## 本地安装
+将项目下载到本地
+```
+npm link
+```
+
 ## 帮助
 指令`tl` 或者 `translate`
 
