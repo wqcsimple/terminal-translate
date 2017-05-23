@@ -1,8 +1,8 @@
 {
   "default": "youdao",
   "baidu": {
-    "appid": "20170517000048160",
-    "key": "1_S_7oC6uvfR0rSpQVk6",
+    "appid": "20170523000048936",
+    "key": "34DOHisaWzec9frvyTmo",
     "from": "auto",
     "to": "zh",
     "language": {
@@ -52,6 +52,10 @@
     {
       "key": "825633180",
       "keyfrom": "ShanaTool3"
+    },
+    {
+      "key": "1076963496",
+      "keyfrom": "ierm-translate"
     }
   ],
   "iciba": {

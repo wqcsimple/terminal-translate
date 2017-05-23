@@ -12,7 +12,7 @@ const package = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../package.j
 
 program
     .usage(`\r\n  ${package.description}\r\n  GithubID: ${package.author}\r\n  Repository: ${package.repository.url}`)
-    .option('-v, --version', 'show version')
+    .version(`${package.version}`)
     .option('-f, --baidu-from <from>', 'baidu engine: from language, default: auto')
     .option('-t, --baidu-to <to>', 'baidu engine: to language, default: zh')
     .option('-l, --baidu-language', 'baidu engine language')
