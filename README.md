@@ -53,8 +53,6 @@ npm link
 ```
   Usage: translate
   a tearmail-transtalte tool!
-  GithubID: ShanaMaid
-  Repository: https://github.com/ShanaMaid/terminal-translate.git
 
   Options:
 
@@ -172,18 +170,6 @@ v1.0.2 支持有道翻译引擎，修复一些BUG
 v1.0.1 支持百度翻译引擎
 
 v1.0.0 发布
-
-
-## 支持
-如果工具有任何BUG或者你想提出改进建议，请提`issue`!
-
-如果你对此工具非常满意不妨`star`或者打赏我请我喝一瓶`脉动`？
-
-![](./example/zhifubao.png)
-![](./example/weixin.png)
-
-## 声明
-单词翻译结果样式参照了[@偏右](https://github.com/afc163)的[fanyi](https://github.com/afc163/fanyi)
 
 
 

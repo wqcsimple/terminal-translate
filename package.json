@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ShanaMaid/terminal-translate.git"
+    "url": "https://github.com/wqcsimple/terminal-translate"
   },
   "keywords": [
     "translate",
@@ -23,8 +23,7 @@
     "tl": "./bin/translate",
     "translate": "./bin/translate"
   },
-  "author": "ShanaMaid",
-  "license": "MIT",
+  "author": "Whis",
   "dependencies": {
     "chalk": "^1.1.3",
     "commander": "^2.9.0",
