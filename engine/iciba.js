@@ -13,7 +13,6 @@ module.exports = (query, config) => {
     };
 
     let url = `${Config.ICIBA_URL}?${Util.transformObjectToUrlencodedData(data)}`;
-    url = encodeURI(url);
 
     http.get(url, (res) => {
         let resData = "";

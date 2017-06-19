@@ -22,7 +22,6 @@ module.exports = (query, config) => {
     };
 
     let url = `${Config.BAIDU_URL}?${Util.transformObjectToUrlencodedData(data)}`;
-    url = encodeURI(url);
 
     http.get(url, (res) => {
 
