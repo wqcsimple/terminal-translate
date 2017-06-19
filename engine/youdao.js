@@ -1,5 +1,7 @@
 const http = require('http');
 const chalk = require('chalk');
+const Util = require('../lib/util');
+const Config = require("../lib/config");
 
 module.exports = (query, config) => {
     const pos = Math.floor(Math.random() * config.youdao.length);
@@ -13,7 +15,7 @@ module.exports = (query, config) => {
         doctype: 'json',
         version: '1.1',
         q
-    }
+    };
 
     const errorCode = {
         0: '正常',
@@ -22,21 +24,18 @@ module.exports = (query, config) => {
         40: '不支持的语言类型',
         50: '无效的key',
         60: '无词典结果,仅在获取词典结果生效'
-    }
+    };
 
-    let url = 'http://fanyi.youdao.com/openapi.do?';
-
-    for (let item in data) {
-        url += `${item}=${data[item]}&`;
-    }
-
+    let url = `${Config.YOUDAO_URL}?${Util.transformObjectToUrlencodedData(data)}`;
     url = encodeURI(url);
 
     http.get(url, (res) => {
-        var resData = "";
+        let resData = "";
+
         res.on("data", function (data) {
             resData += data;
         });
+
         res.on("end", function () {
             resData = JSON.parse(resData);
             let str = '';
