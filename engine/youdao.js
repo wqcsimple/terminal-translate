@@ -53,7 +53,7 @@ module.exports = (query, config) => {
                     if ('uk-phonetic' in basic) {
                         str += chalk.magenta(`   英[${basic['uk-phonetic']}]`);
                     }
-                    str += `\r\n  ${chalk.green('~')} ${chalk.cyan(resData.translation.join(','))}`;
+                    str += `\r\n  ${chalk.green('~')} ${chalk.cyanBright(resData.translation.join(','))}`;
 
                     if ('explains' in basic) {
                         str += `\r\n`;
@@ -72,7 +72,7 @@ module.exports = (query, config) => {
                     let regExp = new RegExp(`(${query.join('|')})`, 'ig');
                     for (let item of resData.web) {
                         str += `\r\n   ${chalk.gray(count++)}. ${item.key.replace(regExp, chalk.yellow(`$&`))}`;
-                        str += chalk.blue(`\r\n     ${item.value.join(',')} \r\n`);
+                        str += chalk.cyan(`\r\n     ${item.value.join(',')} \r\n`);
                     }
                     str += `\r\n`;
                 }
