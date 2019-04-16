@@ -1,9 +1,4 @@
 # terminal-translate
-[![build](https://img.shields.io/badge/npm-1.0.4-blue.svg)](https://github.com/ShanaMaid/terminal-translate) 
-[![build](https://img.shields.io/npm/l/express.svg)](https://github.com/ShanaMaid/terminal-translate)
-[![download](https://img.shields.io/npm/dt/terminal-translate.svg?style=flat-square)](https://www.npmjs.com/package/terminal-translate)
-
-[![NPM](https://nodei.co/npm/terminal-translate.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/terminal-translate/)
 
 命令行翻译工具，三大翻译引擎支持!
 
